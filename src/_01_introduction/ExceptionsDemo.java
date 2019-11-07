@@ -7,7 +7,12 @@ public class ExceptionsDemo {
 		// All exceptions extend from Java's Exception class.
 		// You can make your own exceptions by making a class that 
 		// extends Exception
-		
+		try {
+			testMethod1(2);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		// 1. Call testMethod1 with a value less than 5.
 		//    It should give you an error.
 		//    This is because testMethod1 can potentially throw
